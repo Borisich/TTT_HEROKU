@@ -1,5 +1,11 @@
+
 var app = require('http').createServer();
 var io = require('socket.io')(app);
+
+app.on('request', function(req,res){
+  console.log("Request!");
+});
+
 
 app.listen(80);
 
@@ -81,4 +87,3 @@ io.on('connection', function (socket) {
         console.log("Количество активных комнат: "+rooms.length);
     });
 });
-
