@@ -2,9 +2,9 @@
 var app = require('http').createServer();
 var io = require('socket.io')(app);
 
-app.on('request', function(req,res){
-  console.log("Request!");
-});
+//app.on('request', function(req,res){
+//  console.log("Request!");
+//});
 
 
 app.listen(80);
